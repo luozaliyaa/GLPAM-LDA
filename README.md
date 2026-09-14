@@ -1,12 +1,12 @@
-﻿# GEPAL-LDA
+﻿# GLPAM-LDA: A Graph-to-LLM Prefix Alignment Model for LncRNA-Drug Association Prediction
 
-GEPAL-LDA predicts lncRNA-drug associations by combining graph neural network representations with a prefix-augmented large language model. The workflow integrates lncRNA and drug features, constructs an lncRNA-drug association graph, maps graph embeddings into LLM prefix tokens, and fine-tunes the language model with LoRA for binary association inference.
+GLPAM-LDA predicts lncRNA-drug associations through graph-to-LLM prefix alignment. The workflow integrates lncRNA and drug features, constructs an lncRNA-drug association graph, maps graph embeddings into LLM prefix tokens, and fine-tunes the language model with LoRA for binary association inference.
 
 ## Model Overview
 
 The model overview below is extracted from the manuscript.
 
-![GEPAL-LDA model overview](assets/model_overview.jpeg)
+![GLPAM-LDA model overview](assets/model_overview.jpeg)
 
 ## Repository Structure
 
@@ -131,4 +131,3 @@ ROC and PR curves are saved under the configured metrics output directory.
 - The 10-fold split script uses random seed 42.
 - The base LLM weights are not included and must be downloaded or provided separately.
 - Large generated files, trained checkpoints, and full metric outputs should be archived separately, for example on Zenodo or another persistent repository, before manuscript submission.
-
